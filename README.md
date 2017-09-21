@@ -33,6 +33,15 @@ There are two storage options supported:
 Once server is configured, you can get the tokens for **regular requests** at http://server-address:port/token/email/youremail@gmail.com
 and tokens for **checkin requests** at http://server-address:port/token-ac2dm/email/youremail@gmail.com
 
+### How to run docker container
+```
+~#: make build
+~#: make run
+~#: make status
+~#: make start
+~#: make stop
+```
+
 ### Credits
 
 * [play-store-api](https://github.com/yeriomin/play-store-api)
