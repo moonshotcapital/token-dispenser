@@ -1,6 +1,5 @@
 run:
-	docker rm token-dispenser
-	docker run -d -p 127.0.0.1\:8080\:8080 --restart always --name token-dispenser -v $(shell pwd)\:/var/tmp/token-dispenser/ token-dispenser
+	docker run -d -p 127.0.0.1\:8080\:8080 --restart always --name token-dispenser -v ${CURDIR}:/var/tmp/token-dispenser/ token-dispenser
 
 start:
 	docker start token-dispenser
@@ -13,3 +12,6 @@ build:
 
 status: 
 	docker inspect token-dispenser
+
+remove:
+	docker rm token-dispenser
