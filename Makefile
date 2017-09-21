@@ -1,5 +1,6 @@
 run:
-	docker run -d -p 8080\:8080 --restart always --name token-dispenser -v $(shell pwd)\:/var/tmp/token-dispenser/ token-dispenser
+	docker rm token-dispenser
+	docker run -d -p 127.0.0.1\:8080\:8080 --restart always --name token-dispenser -v $(shell pwd)\:/var/tmp/token-dispenser/ token-dispenser
 
 start:
 	docker start token-dispenser
