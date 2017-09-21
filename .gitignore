@@ -11,3 +11,4 @@ buildNumber.properties
 *.iml
 target
 *.log
+passwords.txt
